@@ -1,0 +1,8 @@
+# Compiled class files
+*.class
+
+# IntelliJ IDEA specific files
+.idea/
+
+# Maven specific files
+target/
