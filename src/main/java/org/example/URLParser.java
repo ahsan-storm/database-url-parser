@@ -23,7 +23,7 @@ public class URLParser {
   private static void performBasicValidation(String url) {
     if (!url.startsWith("jdbc:") ||
         url.split(":").length < 3) {
-      throw new IllegalArgumentException("Invalid database URL: " + url);
+      throw new IllegalArgumentException("Invalid jdbc connection URL: " + url);
     }
   }
 }

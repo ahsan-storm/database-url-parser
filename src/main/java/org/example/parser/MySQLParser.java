@@ -55,7 +55,7 @@ public class MySQLParser implements DatabaseURLParser {
     String primaryHost = Arrays.stream(hosts).findFirst().get();
     String[] hostAndPort = primaryHost.split(":");
     if (hostAndPort.length < 1) {
-      throw new IllegalArgumentException("Host is not valid in url");
+      throw new IllegalArgumentException("Invalid host found in url");
     }
     return hostAndPort[0];
   }
